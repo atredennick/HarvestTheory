@@ -3,6 +3,26 @@ HarvestTheory
 
 Code to reproduce figures in Tredennick and Hanan, in review.
 
+Requirements
+------------------------
+R (http://www.r-project.org/; we used R 3.1.0, but our code should be compatible across builds) and the following R packges:
+
+* ``ggthemes``
+* ``grid``
+* ``plyr``
+* ``reshape2``
+* ``ggplot2``
+
+To install these packages, run the code chunk below in your R console:
+
+```coffee
+install.packages("ggplot2", dependencies = TRUE)
+install.packages("plyr")
+install.packages("ggthemes")
+install.packages("reshape2")
+install.packages("grid")
+```
+
 
 License
 -------------------------
