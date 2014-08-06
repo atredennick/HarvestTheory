@@ -1,4 +1,4 @@
-HarvestTheory
+Effects of Tree Harvest on the Stable-State Dynamics of Savanna and Forest
 =============
 
 Code to reproduce figures in Tredennick and Hanan, in review. The core model, ``SFG_ModelFunction``, is an extension of the model presented by Staver et al. 2011, _Ecology_  (http://www.esajournals.org/doi/abs/10.1890/10-1684.1) and Staver and Levin 2012, _American Naturalist_ (http://www.jstor.org/stable/10.1086/666648).
