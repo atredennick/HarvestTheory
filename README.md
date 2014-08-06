@@ -5,7 +5,7 @@ Code to reproduce figures in Tredennick and Hanan, in review. The core model, ``
 
 Requirements
 ------------------------
-R (http://www.r-project.org/; we used R 3.1.0, but our code should be compatible across builds) and the following R packges:
+For most all of our results, we used R (http://www.r-project.org/; we used R 3.1.0, but our code should be compatible across builds) to simulate the model and the following R packges:
 
 * ``ggthemes``
 * ``grid``
@@ -22,7 +22,7 @@ install.packages("ggthemes")
 install.packages("reshape2")
 install.packages("grid")
 ```
-
+However, we used the symbolic math functions in Matlab (http://www.mathworks.com/products/matlab/) to calculate system equilibria (see ``EquilibriumSolutions.m``).
 
 License
 -------------------------
