@@ -1,0 +1,83 @@
+\documentclass[12pt]{article}
+\usepackage{graphics}
+\usepackage{graphicx, verbatim}
+\usepackage{amssymb}
+\usepackage{amsmath}
+% \usepackage[T1]{fontenc}
+% \usepackage[utf8]{inputenc}
+\usepackage{authblk}
+\textwidth=6.2in
+\textheight=8.5in
+%\parskip=.3cm
+\oddsidemargin=.1in
+\evensidemargin=.1in
+\headheight=-.3in
+
+\usepackage{Sweave}
+\begin{document}
+\input{readMe-concordance}
+
+
+%To put figures in subfolder
+%\SweaveOpts{prefix.string=figures/fig}
+\DefineVerbatimEnvironment{Sinput}{Verbatim} {xleftmargin=2em}
+\DefineVerbatimEnvironment{Soutput}{Verbatim}{xleftmargin=2em}
+\DefineVerbatimEnvironment{Scode}{Verbatim}{xleftmargin=2em}
+
+\title{Data from: Effects of Tree Harvest on the Stable-State Dynamics of Savanna and Forest}
+
+\author[1]{Andrew T. Tredennick \thanks{\emph{email}: atredenn@gmail.com}}
+\author[2]{Niall P. Hanan}
+\author[3]{Katelynn Martinez}
+\author[4]{Labassoun Keita}
+\affil[1]{\footnotesize Natural Resource Ecology Laboratory and Graduate Degree Program in Ecology, Colorado State University}
+\affil[2]{\footnotesize Geospatial Science Center of Excellence, South Dakota State University}
+\affil[3]{\footnotesize Department of Forest and Rangeland Stewardship, Colorado State University}
+\affil[4]{\footnotesize Universit\`{e}s de Bamako}
+\date{}
+\maketitle
+
+\section*{Read me...}
+This is a ``Read me" file associated with the data file {\tt data file name.csv}. The data come from a set of household interviews conducted in Mali, West Africa during the summer of 2011. This dataset is a subset of a larger dataset. We provide the subset only here because the full dataset is large and rather cumbersome. However, interested parties are encouraged to contact Andrew Tredennick (atredenn@gmail.com) for access to the full dataset (which includes information on annual fuelwood demand and other metrics associated with fuelwood use and collection).
+
+The dataset archived here consists of a single tabular file. It consists of responses from 100 household interviews, 20 each from three villages in Mali and 10 each from two villages that were very nearby. Included are responses to questions about the percent of fuelwood purchased versus collected by the household, and, of the percentage collected, the proportion that is cut from live trees versus obtained dead on the ground. We used this data to show the broad trend that in drier regions people tend to collect dead wood rather than cut live wood. 
+
+\subsection*{Data file information}
+\begin{description}
+  \item[Identity:] {\tt propWoodCutResponses.csv}
+  \item[Size:] 100 records (3 KB)
+  \item[Format~and~storage~mode:] ASCII text, comma separated.
+  \item[Header~information:] First row of the file contains the variable names described in the table below.
+  \item[Special~characters/fields:] Empty cells are {\tt NA} values.
+\end{description}
+
+\subsection*{Variable information}
+\begin{tabular}{ l p{5cm} l l l }
+  \hline
+  Variable name & Variable definition & Units & Storage type & Precision \\
+  \hline
+  Site & Village name & N/A & Character & N/A \\
+  ID & Unique household identifier & N/A & Integer & 1 \\
+  MAP & Mean annual precipitation at the site & mm yr$^{-1}$ & Integer & 1 \\
+  percPurchase & Percent of annual household wood supply purchased & Percent & Integer & 1 \\ 
+  percNotPurchase & Percent of annual household wood supply not purchased & Percent & Integer & 1 \\ 
+  percDeadCollect & Percent of non-purchased annual household wood supply that is collected dead & Percent & Integer & 1 \\ 
+  percLiveCut & Percent of non-purchased annual household wood supply that is cut live & Percent & Integer & 1 \\
+  \hline
+\end{tabular}
+
+\subsection*{Site/Village Information}
+\begin{tabular}{ l l l }
+  \hline
+  Village name & Latitude & Longitude \\
+  \hline
+  Tiend\`{e}ga & & \\
+  Tiorola & & \\
+  Fiela & & \\
+  Neguela & & \\
+  Lakaman\`{e} & & \\
+  Nioro & & \\
+  \hline
+\end{tabular}
+
+\end{document}
